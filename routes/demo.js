@@ -6,7 +6,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-    res.send('respond with a resource');
+    res.send('Responde a la ruta demo');
 });
 
 module.exports = router;
