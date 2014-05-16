@@ -14,8 +14,29 @@ block contenido
         div(id='panel4', class='col-md-8 col-md-offset-1 well')
             p Propiedad 4
       div(id='derecha', class='col-md-6')
-          div(id='login', class='col-md-6 col-md-offset-3 well')
-            p Iniciar sesion
-          div(id='registro', class='col-md-6 col-md-offset-3 well')
-              p Registrate
+          div(id='login', class='col-md-9 col-md-offset-2 well')
+            div(class='panel-default')
+                div(class='panel-heading')
+                    h3(class='panel-title') Ingresa tus datos
+                div(class='panel-body')
+                form(role='form')
+                    fieldset
+                        div(class='form-group')
+                            input(class='form-control', type='email', autofocus='', name='email', placeholder='Correo electronico')
+                        div(class='form-group')
+                            input(class='form-control', type='password', value='', name='password', placeholder='Contraseña')
+                        div(class='checkbox')
+                            label Recordarme
+                                input(type='checkbox', value='Recordarme', name='remember')
+                        a(class='btn btn-lg btn-success btn-block', href='home') Iniciar sesion
+          div(id='registro', class='col-md-9 col-md-offset-2 well')
+              h2 Crea una cuenta
+              div(id='div-registro')
+                form(id='form-registro', class='form-inline')
+                    div(class='form-group')
+                        input(class='form-control', placeholder='Nombre')
+                    div(class='form-group')
+                        input(class='form-control', placeholder='Correo electronico')
+      div(id='pie', class='col-md-12')
+          p pie
 
